@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css2? Family= PT+ Sans:ital,wght@0,400;0,700;1400 & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;1,100;1,200;1,300;1,400;1,500&display=swap');
+*{
+    font-family: "PT Sans", sans-serif ;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+}
+.control-block-time{
+    position: relative;
+     display: flex;
+     flex-wrap: wrap;
+     padding: 10px;
+     margin: 0px;
+     box-sizing: border-box;
+     color: #404557;
+     .block-clinic-time{
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         width: 450px;
+         padding: 5px;
+         margin: 5px;
+       
+         align-items: center;
+        p{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 345px;
+            font-size: 16px;
+            font-weight: 600;
+            // white-space: nowrap;
+            font-family: 'Montserrat', sans-serif;
+            margin: 5px 0px 0px 20px;
+
+        }
+        p::before{
+            content: ' ';
+            display: block;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin-right: 10px;
+            margin-left:  5px;
+            margin-bottom: 1px;
+           
+        }
+        .spin_1::before{
+            background: #68BCFF;
+        }
+        .spin_2::before{
+            background: #F000A4;
+        }
+        .spin_3::before{
+            background: #FF7145;
+        }
+        .spin_4::before{
+            background: #008F45;
+        }
+        .header{
+            position: relative;
+            display: flex;
+            width: 100%;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 23px;
+          
+            .btn-boks{
+                position: relative;
+                display: flex;
+                width: 320px;
+                min-width: 320px;
+                height: min-content;
+                flex-direction: row;
+                overflow-x: hidden;
+                height: 100%;
+                scroll-behavior: smooth;
+                border-bottom: 1px solid #CCCCCC;
+                .btn-date{
+                    position: relative;
+                    display: block;
+                    box-sizing: border-box;
+                    white-space: nowrap;
+                    width: min-content;
+                    height: 100%;
+                    background: none;
+                    border: none;
+                    font-size: 16px;
+                    margin-right: 3px;
+                    padding-bottom: 5px;
+                    cursor: pointer;
+                    
+                    color: #757b92;
+                }
+                .btn-date:hover{
+                    border-bottom: 3px solid #0082C8;
+                    padding-bottom: 2px;
+                }
+                .active-btn{
+                  border-bottom: 3px solid #0082C8;
+                  padding-bottom: 2px;
+                }
+             }
+             .next{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: none;
+             
+                background: #eeeeee;
+                border-radius: 50%;
+                cursor: pointer;
+                height: 40px;
+                width: 40px;
+                padding: 0px;
+                // margin-bottom: 5px;
+                // margin-right: 2px;
+                // padding-right: 5px;
+                span{
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    border-bottom: 1px solid #0082c8bf;
+                    border-right: 1px solid #0082c8bf;
+                    transform: rotate(-45deg);
+                    cursor: pointer;
+                    margin-right: 5px;
+                }
+                .deactive-span{
+                    border-bottom: 1px solid #ababab;
+                    border-right: 1px solid #ababab;
+                }
+             }
+             .back{
+                @extend .next;
+                // margin-left: 2px;
+                // margin-right: 10px;
+                span{
+                    margin-right: 0px;
+                    margin-left: 5px;
+                    transform: rotate(134deg);
+                }
+             }
+        }
+
+        
+        
+        .time-bloks{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0px;
+            margin-top: 15px;
+            // padding: 0px 10px 0px 10px;
+            width: 330px;
+            padding: 0px;
+            margin-left: 17px;
+            .time-btn{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background: #0082C8;
+                border: none;
+                border-radius: 5px;
+                font-size: 13px;
+                margin-right: 5px;
+                min-width: 60px;
+                min-height: 30px;
+                margin-bottom: 9px;
+                // padding: 5px 10px 5px 10px;
+                color: white;
+                cursor: pointer;
+                font-family: 'PT Sans', sans-serif;
+                font-weight: 300;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+@media screen and (max-width: 550px){
+    .control-block-time{
+        padding: 0px;
+        .block-clinic-time{
+            // padding: 0px;
+            // margin: 0px;
+            margin-top: 20px;
+            width: 350px;
+            .header{
+                .btn-boks{
+                    width: 227px;
+                    min-width: 227px;
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 350px){
+    .control-block-time{
+        .block-clinic-time{
+            width: 100%;
+            margin-left: 5px;
+            padding-right: 5px;
+            p{
+                width: 100%;
+                //  margin-left: 0px;
+            }
+        
+            
+            .spin_2::before{
+                width: 12px;
+                height: 10px;
+            }
+            .header{
+                .btn-boks{
+                    width: 157px;
+                    min-width: 157px;
+                }
+            }
+            .time-bloks{
+                width: 100%;
+               
+
+            }
+        }
+    }
+}
