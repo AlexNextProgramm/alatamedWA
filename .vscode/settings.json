@@ -1,0 +1,7 @@
+{
+  "php.executablePath": "",
+  "php.suggest.basic": true,
+  "php.files.exclude": [],
+  "phpserver.phpPath": "C:/xampp/php/php.exe",
+  "files.autoGuessEncoding": true
+}

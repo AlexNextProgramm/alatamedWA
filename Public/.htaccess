@@ -1,0 +1,18 @@
+RewriteEngine On
+RewriteBase /
+
+
+RewriteRule ^page/$ index.php [L,NC]
+; RewriteRule ^contact$ index.php [L,NC]
+; #Таким образом будем получать карты клиентов
+; RewriteRule ^master index.php [L,NC]
+; RewriteRule ^webcabinet index.php [L,NC]
+; RewriteRule ^confirmation index.php [L,NC]
+; RewriteRule ^confirmclient index.php [L,NC]
+; RewriteRule ^webclient index.php [L,NC]
+; RewriteRule ^restore index.php [L,NC]
+
+; #Будем получать карты клиентов
+; RewriteRule ^customer index.php [L,NC]
+; ErrorDocument 404 https://service-live.ru/errors404
+; RewriteRule ^errors404 index.php [L,NC]

@@ -1,0 +1,337 @@
+{
+  "variable": [
+    {
+      "name": "Клиент",
+      "text": "{{1}}",
+      "nameInput": "1",
+      "comment": "Имя Отчество пациента",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text" },
+        "children": []
+      },
+      "NameSender": true,
+      "id": "11"
+    },
+    {
+      "name": "Дата",
+      "text": "{{2}}",
+      "nameInput": "2",
+      "comment": "Дата",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "date" },
+        "children": []
+      },
+      "id": "658d646d88dcf"
+    },
+    {
+      "name": "Время",
+      "text": "{{3}}",
+      "nameInput": "3",
+      "comment": "Время",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "time" },
+        "children": []
+      },
+      "id": "658d649de95c0"
+    },
+    {
+      "name": "Доктор",
+      "text": "{{4}}",
+      "nameInput": "4",
+      "comment": "Фамилия И О (доктора)",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text" },
+        "children": []
+      },
+      "id": "658d64d52c17e"
+    },
+    {
+      "name": "Сообщение",
+      "text": "{{5}}",
+      "nameInput": "5",
+      "comment": "Сообщение клиенту",
+      "html_input": { "tag": "textarea", "props": {}, "children": [] },
+      "id": "658d6f848162e"
+    },
+    {
+      "name": "Кнопка \"Отмена записи\"",
+      "text": "{{6}}",
+      "nameInput": "6",
+      "comment": "Отмена записи",
+      "html_input": {
+        "tag": "button",
+        "props": { "disablend": true, "name": "playload" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a4dc79dd15d",
+      "payload": "Я хочу отменить запись к врачу",
+      "payloadText": "Отменить запись"
+    },
+    {
+      "name": "Дата+время+доктор",
+      "text": "{{7}}",
+      "nameInput": "7",
+      "comment": "Дата, время и ФИО доктора",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a50387bc41b"
+    },
+    {
+      "name": "Кнопка_ссылка_гистеро",
+      "text": "{{url_gistero}}",
+      "nameInput": "url_gistero",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a8cf7a6979c",
+      "buttonName": "Смотреть подготовку",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/info/gistero.pdf"
+    },
+    {
+      "name": "Кнопка_ссылка_флебол",
+      "text": "{{url_flebo}}",
+      "nameInput": "url_flebo",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a8d48ca2d2a",
+      "buttonName": "Смотреть подготовку",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/info/flebology.pdf"
+    },
+    {
+      "name": "Кнопка телефона Альтамед",
+      "text": "{{altamed_phone}}",
+      "nameInput": "altamed_phone",
+      "comment": "Телефон Альтамед",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a8f34c7befd",
+      "buttonName": "Позвонить нам",
+      "buttonType": "PHONE",
+      "buttonPHONE": "+74952129003"
+    },
+    {
+      "name": "ссылка на оплату",
+      "text": "{{oplata_1}}",
+      "nameInput": "oplata_1",
+      "comment": "Введите полную ссылку на оплату",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a91e454cf46",
+      "buttonName": "Ссылка на оплату",
+      "buttonType": "URL"
+    },
+    {
+      "name": "Ссылка Кнопка Налоговый вычет",
+      "text": "{{nalog_url}}",
+      "nameInput": "nalog_url",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a9213a990c9",
+      "buttonName": "Посмотреть инструкцию",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/about/nalogovyy-vychet/"
+    },
+    {
+      "name": "Ссылка \"Оцените нашу работу\"",
+      "text": "{{setlink}}",
+      "nameInput": "setlink",
+      "comment": "uip",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a925cedc129",
+      "buttonName": "Оценить нашу работу",
+      "buttonType": "URL"
+    },
+    {
+      "name": "Ссылка гастроскопия",
+      "text": "{{url_gastro}}",
+      "nameInput": "url_gastro",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a92a02d9a72",
+      "buttonName": "Смотреть подготовку",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/info/gastro.pdf"
+    },
+    {
+      "name": "Подготовка колоноскопия",
+      "text": "{{url_colono}}",
+      "nameInput": "url_colono",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a92a8f55172",
+      "buttonName": "Смотреть подготовку",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/info/kolono.pdf"
+    },
+    {
+      "name": "Сcылка ПО \"недержанию мочи\"",
+      "text": "{{url_urino}}",
+      "nameInput": "url_urino",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a92c1cabcad",
+      "buttonName": "Смотреть подготовку",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/info/urino.pdf"
+    },
+    {
+      "name": "Ссылка будущая мама",
+      "text": "{{mamma_progr}}",
+      "nameInput": "mamma_progr",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a92f03af6d4",
+      "buttonName": "Состав программы",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/info/pregnancy.pdf"
+    },
+    {
+      "name": "FemTouch URL YOTUBE",
+      "text": "{{youtube_1}}",
+      "nameInput": "youtube_1",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a9303abe165",
+      "buttonName": "Смотреть видео на YouTube",
+      "buttonType": "URL",
+      "buttonURL": "https://youtu.be/a861qhm_FJQ"
+    },
+    {
+      "name": "Ссылка анализов ИНПЛАН",
+      "text": "{{implatation_tests}}",
+      "nameInput": "implatation_tests",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65a931f087d7f",
+      "buttonName": "Список анализов",
+      "buttonType": "URL",
+      "buttonURL": "https://www.altamedplus.ru/upload/documents/recomendation/implatation_tests.pdf"
+    },
+    {
+      "name": "Кнопка_Я_приду",
+      "text": "{{btn_agree}}",
+      "nameInput": "btn_agree",
+      "comment": "",
+      "html_input": {
+        "tag": "button",
+        "props": { "disablend": true, "name": "playload" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65aa3ada37a77",
+      "payload": "Я приду на приём, поставьте отметку о дозвоне.",
+      "payloadText": "Я приду!"
+    },
+    {
+      "name": "Кнопка_Отмена_записи_недозвон",
+      "text": "{{btn_cancel}}",
+      "nameInput": "btn_cancel",
+      "comment": "",
+      "html_input": {
+        "tag": "button",
+        "props": { "disablend": true, "name": "playload" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65aa3b1b1a0fe",
+      "payload": "Пациент отменил запись, нужно уточнить причину и перезаписать.",
+      "payloadText": "Отменить приём"
+    },
+    {
+      "name": "Кнопка А+ Beauty",
+      "text": "{{phone_beauty}}",
+      "nameInput": "phone_beauty",
+      "comment": "",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text", "name": "button" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "65c4dd92b04c6",
+      "buttonName": "Позвонить нам",
+      "buttonType": "PHONE",
+      "buttonPHONE": "+74952121093"
+    }, {
+      "name": "номер",
+      "text": "{{number}}",
+      "nameInput": "number",
+      "comment": "номер заявки ",
+      "html_input": {
+        "tag": "input",
+        "props": { "type": "text" },
+        "children": []
+      },
+      "NameSender": false,
+      "id": "660d326f3ec7b"
+    }
+  ]
+}

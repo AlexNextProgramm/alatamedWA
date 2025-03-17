@@ -1,0 +1,84 @@
+{
+  "buttons": [
+    {
+      "2": true,
+      "3": true,
+      "4": true,
+      "6": true,
+      "clinic": ["Altamed", "Odinmed", "Odinmedplus", "Dubki", "AltamedBeauty"],
+      "chapter": "Запись на приём",
+      "massenge-sample": "Сеть медицинских центров «Альтамед+» приветствует Вас!\n\nВы записаны на приём:\n*{{2}} в {{3}} к доктору {{4}}*\nв клинику *«{{clinic}}»*\nпо адресу: *{{address}}*.",
+      "comment": "Сообщение о записи на приём",
+      "name": "Запись на приём",
+      "role": ["senior_admin", "admin", "system_admin", "marketing"],
+      "examination": "0",
+      "id": "65a503e55a9a3",
+      "header": { "headerType": "TEXT", "text": "Запись на приём" },
+      "footer": { "footerType": "TEXT", "text": "Будьте здоровы!" }
+    },
+    {
+      "1": true,
+      "2": true,
+      "3": true,
+      "4": true,
+      "5": true,
+      "clinic": [
+        "Altamed",
+        "Odinmed",
+        "Odinmedplus",
+        "Dubki",
+        "Proletarka",
+        "AltamedBeauty"
+      ],
+      "chapter": "Налог",
+      "massenge-sample": "Здравствуйте! \nСпасибо за ваше доверие к сети медицинских центров «Альтамед»!\nНаправляем Вам ссылку на инструкцию по получению налогового вычета. Выберите центр, где вы получали медицинскую помощь и пройдите по ссылке.\n\n*1. Медицинский центр «Альтамед »*\nАдрес: г.Одинцово, Союзная, 32Б.\nhttps://www.altamedplus.ru/about/nalogovyy-vychet/\n\n*2. Клиника «Одинмед»*\nАдрес: г.Одинцово, Комсомольская ул., д.16, корп.3\nhttps://odinmed.net/about/nalogovyy-vychet\n\n*3. Медицинский центр «Одинмед »*\nАдреса: г.Одинцово, ул.Неделина, д.9 и ул.Верхне-Пролетарская, д.35\nhttps://odinmed.net/about/nalogovyy-vychet\n\n*4. Медицинский центр «Дубки-Альтамед»*\nАдрес: Одинцовский р-н, пос. ВНИИССОК (Дубки), ул.Рябиновая, дом 2\nhttps://dubki-altamed.ru/patients/#nalog\n\nДля получения дополнительной информации, звоните  7 (495) 212-90-03.",
+      "comment": "Налоговый Вычет",
+      "name": "Налоговый Вычет",
+      "role": ["senior_admin", "admin", "system_admin", "doctor", "marketing"],
+      "examination": "0",
+      "id": "658d221b55fbf"
+    },
+    {
+      "5": true,
+      "6": true,
+      "clinic": [
+        "Altamed",
+        "Odinmed",
+        "Odinmedplus",
+        "Dubki",
+        "Proletarka",
+        "AltamedBeauty"
+      ],
+      "chapter": "Запись",
+      "massenge-sample": "Сеть медицинских центров «Альтамед+» приветствует Вас!\n\nВы записаны на приём:\n*{{5}}*\nв клинику *«{{clinic}}»*\nпо адресу: *{{address}}*.",
+      "comment": "",
+      "name": "Запись на прием",
+      "role": ["senior_admin", "admin", "system_admin", "doctor", "marketing"],
+      "examination": "0",
+      "id": "65a4de6c898be",
+      "header": { "headerType": "TEXT", "text": "Запись на приём" },
+      "footer": { "footerType": "TEXT", "text": "Будьте здоровы!" }
+    },
+    {
+      "1": true,
+      "clinic": [
+        "Altamed",
+        "Odinmed",
+        "Odinmedplus",
+        "Dubki",
+        "Proletarka",
+        "AltamedBeauty"
+      ],
+      "chapter": "Налог",
+      "massenge-sample": "{{1}}, ваши документы налогового вычета по заявке № {{number}}  готовы. Можете получить в клинике «{{clinic}}» по адресу {{address}}",
+      "comment": "",
+      "name": "Оповещение налоговый вычет",
+      "role": ["senior_admin", "admin", "system_admin", "doctor", "marketing"],
+      "examination": "1",
+      "id": "65fbf7f5edc77",
+      "number": true,
+      "header": { "headerType": "TEXT", "text": "Налоговый вычет" },
+      "footer": { "footerType": "TEXT", "text": "С Уважением Альтамед+" }
+    }
+  ]
+}
