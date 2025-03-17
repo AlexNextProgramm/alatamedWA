@@ -1,0 +1,36 @@
+.footer{
+    width: 100%;
+     padding: 15px;
+     padding-bottom: 20px;
+     padding-top: 20px;
+     background-color: var(--basic-color);
+     flex-direction: column;
+     div{
+        flex-direction: column;
+        font-size: 13px;
+        width: 100%;
+        justify-content: end;
+        align-items: end;
+        p{
+            margin-bottom: 5px;
+        }
+        a{
+            margin-bottom: 5px;
+        }
+
+     }
+    }
+    @media screen and (max-width: 400px){
+        .footer{
+            div{
+                justify-content: center;
+                align-items: center;
+            }
+            p{
+                text-align: center;
+            }
+            a{
+                text-align: center;
+            }
+        }
+    }

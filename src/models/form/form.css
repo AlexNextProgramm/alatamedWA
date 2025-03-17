@@ -1,0 +1,20 @@
+.fon {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+     top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px; 
+    z-index: 9999;
+    backdrop-filter: blur(8px);
+}
+ .fon input, .fon select{
+    padding: 5px 10px 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+ }

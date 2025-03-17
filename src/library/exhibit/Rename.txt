@@ -1,0 +1,111 @@
+
+   Знакомство с Exhibit
+   Exhibit - это объект(class) виртуальной ноды 
+   создание первой страницы Hello word!!
+
+
+     const hello = new ExhiDOM('body')
+
+     hello.render = ()=>{
+        return body(
+            div({className:'vot'},
+                p("Привет мир")
+            )
+        )
+ }
+
+ Функция render - должна возвращать вертуальную ноду 
+ vnode  -   объект элемента виртуальной ноды 
+ vnode  есть три параметра 
+ tag = nameTag = имя HTMLelement
+ props =  объект атрибутов элемента 
+ children = массив vnode (елементов vnode)
+
+ Функции вовращающие vnode
+ Это оснопологающие функции возращающие vnode
+
+ Пример:
+ ex('div', {className:'contener'}, 
+ [
+    ex('p',{ style:'color: red;', textContent:'Hello World'})
+ ])
+
+
+ Чтобы код был легко наглядный  можно писать иначе так код выгдяет читабельнее
+ названия  функции это название tagName Элемента 
+
+ Результат:
+ div({className:'contener'}, 
+        [
+            p({ style:'color: red;', textContent:'Hello World'})
+        ])
+
+
+
+Но этот код можно написать еще проще  
+div({className:'contener'}, 
+            p({ style:'color: red;'}, "Hello World")
+        )
+ 
+ 
+    Если у вас нет атрибутов у элемента div
+
+        div( p({ style:'color: red;'}, "Hello World") )
+
+    Если у div  элемента  есть несколько элементов Vnode больше 2 
+    тогда нужно обяательно указать массив 
+
+    до 2 элементов 
+
+    div( p({ style:'color: red;'}, "Hello World"), p({ style:'color: red;'}, "Hello World 2"))
+
+    больше 2 елементов
+    div([
+        p({ style:'color: red;'}, "Hello World"),
+        p({ style:'color: red;'}, "Hello World 2"),
+        p({ style:'color: red;'}, "Hello World 3")
+        ])
+
+    Если у элемента есть атрибут тогда  можно писать не более одного элемента не помещая в массив
+
+    div({className:'contener'}, [
+        p({ style:'color: red;'}, "Hello World"),
+        p({ style:'color: red;'}, "Hello World 2"),
+        ])
+
+        div({className:'contener'},  p({ style:'color: red;'}, "Hello World") )
+
+    Елемент  vnode может принимать стороку 
+    p("Hello World") - В таком варианте текст попадет в атрибут textContent 
+    Тоесть на выходе получиться vnode {tag:'p' props:{textContent:'Hello World'}}
+    Елемент vnode также может принимать строку HTML
+    div('<p>Hello World</p>') - В таком варианте текст попадет в атрибут innerHTML
+    Тут на выходе получиться vnode {tag:'p' props:{ innerHTML:'<p>Hello World</p>' }}
+    
+    Итак это познакомились с виртуальной нодой теперь что мы можем делать в ExhiDOM
+
+
+    Функция search
+    ExhiDOM.search( search-element, atribute, children)
+    search-element  - параметр поиска элемента в vnode '.className' - по классу,  '#id' - по id
+    atribute = объект props  которые нужно изменить в элементе
+    children = массив объектов vnode которые нужно заменить
+    Важно после замены элементов автоматически render новой vnode
+
+    Пример кнопки отключения формы 
+    
+        const form  = new ExhiDOM('form-edit')
+
+     
+        function exit(){
+        form.search('.form-edit', {className:'form-edit deactive'}, [])
+         }
+
+
+        form.render(()=>{
+            return div({className:'form-edit'},
+                div({className:'form'}, 
+                    btn({className:'btn-exit', onclick:exit},'×'),
+                    )
+            )
+            })

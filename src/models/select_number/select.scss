@@ -1,0 +1,68 @@
+.time-select{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+    border-radius: 30px;
+    width: max-content;
+    justify-content: center;
+    align-items: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: max-content;
+    img{
+        width: 27px;
+        height: 27px;
+        margin-left: 5px;
+    }
+    p{
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        font-weight: 500;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        font-size: 18px;
+        padding-left: 2px;
+        padding-right: 2px;
+        border: none;
+    }
+    select{
+        border: none;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        padding: 6px;
+        font-size: 18px;
+        font-weight: 300;
+        background: none;
+        margin: 0px;
+        option{
+            text-align: center;
+            // display: none;
+            padding-right: 5px;
+        }
+        
+        
+    }
+   select::-webkit-scrollbar{
+        display: none;
+        width: 0px;
+    }
+    select::-ms-expand {
+        display: none;
+      }
+    .time-hour{
+        cursor: pointer;
+        padding-right: 1px;
+    }
+    .time-minute{
+        cursor: pointer;
+        padding-left: 1px;
+    }
+
+    
+       
+    
+}

@@ -1,0 +1,29 @@
+.button_close{
+ position: absolute;
+ display: block;
+ text-align: center;
+ justify-content: center;
+ background: rgba(24, 24, 24, 0);
+ border:  none;
+ cursor: pointer;
+ top: 0px;
+ right: 0px;
+ width: 20px;
+ height: 20px;
+}
+.button_close span{
+    position: relative;
+    left: 0;
+    display: block;
+    width: 16px;
+    height: 1px;
+    background: white;
+    transform: rotate(-45deg) translateX(-0.5px);
+
+}
+.revrece_span_btn{
+    transform: rotate(45deg)translateX(-0.5px)!important;
+}
+.button_close:hover > span{
+    background: red;
+}

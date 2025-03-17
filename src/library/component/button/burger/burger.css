@@ -1,0 +1,50 @@
+.burger-lib{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 45px;
+    height: 40px;
+    padding: 5px;
+    /* background: linear-gradient(180deg, rgba(167,209,210,1) 9%, rgba(68,161,161,1) 93%); */
+    /* background: linear-gradient(180deg, rgba(167,209,210,1) 13%, rgba(53,124,124,1) 91%); */
+    background:#2c8093;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease-out;
+}
+.burger-lib p{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    width: 30px;
+    height: 2px;
+    background: rgb(219, 219, 219);
+    margin: 3px;
+    cursor: pointer;
+    transition: transform 800ms ease-out, opacity 500ms;
+}
+.burger-lib:hover p{
+    background: white;
+}
+.activ_burger .sp-center{
+   opacity: 0;
+}
+.activ_burger .sp-top{
+    transition: all 800ms ease-out;
+    transform: rotate(45deg) translateX(6px) translateY(7px);
+}
+.activ_burger{
+    transition: all 800ms ease-out;
+     width: 219px !important;
+}
+
+.activ_burger .sp-bottom{
+    transition: all 800ms ease-out;
+    transform: rotate(-45deg) translateX(4.7px) translateY(-5px);
+}
