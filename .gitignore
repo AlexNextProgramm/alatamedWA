@@ -1,0 +1,7 @@
+Public/CSS/
+node_modules/
+Public/JS/
+.vscode/
+Public/php/log_*.txt
+Public/php/error_log_*.txt
+*-lock.json
